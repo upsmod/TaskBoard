@@ -45,11 +45,6 @@
     "postinstall": "cd src/api/ && composer update && composer install --optimize-autoloader && cd ../../",
     "package": "7z a TaskBoard_v$npm_package_version.zip ./dist/{*,.[!.]*}"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
-  },
   "dependencies": {
     "@angular/animations": "^10.0.11",
     "@angular/cdk": "^10.1.3",
